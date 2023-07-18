@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!--top menu item-->
+    <menuitem
+            id="materiel_management_root"
+            name="Materiel Management"
+            web_icon="quality_control_peugeot,static/description/icon.png"
+            sequence="1"/>
+
+    <!--top menu configuration-->
+    <menuitem name="Configuration"
+              id="configuration_menu"
+              parent="materiel_management_root"
+              sequence="20"/>
+
+    <menuitem id="menu_country"
+              action="base.action_country" parent="configuration_menu"
+              sequence="2"/>
+
+</odoo>
+
+
